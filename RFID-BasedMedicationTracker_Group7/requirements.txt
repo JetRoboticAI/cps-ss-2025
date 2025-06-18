@@ -1,0 +1,6 @@
+mfrc522-python
+python-telegram-bot
+requests
+RPi.GPIO
+schedule
+spidev
