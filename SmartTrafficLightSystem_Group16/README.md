@@ -6,10 +6,11 @@ A modular smart traffic light system leveraging computer vision and IoT protocol
 
 ```
 .
-├── backend/                # Backend API and frontend web interface
+├── backend/                # Backend API
 ├── docs/                   # MQTT protocol documentation
 ├── traffic_light/          # Traffic light control runloop
-└── violation_detection/    # Dockerized YOLO & license plate OCR for red light violation detection
+├── traffic_light_web/      # Vue.js frontend interface
+└── violation_detection/    # Dockerfile for license plate OCR and service for red light violation detection
 ```
 
 ### Subfolders
@@ -40,6 +41,10 @@ A modular smart traffic light system leveraging computer vision and IoT protocol
     cd backend
     # Follow backend/README.md for setup instructions
     ```
+    ```bash
+    cd ../traffic_light_web
+    npm run serve
+    ```
 
 3. **Run the traffic light control:**
     ```bash
@@ -48,9 +53,11 @@ A modular smart traffic light system leveraging computer vision and IoT protocol
     ```
 
 4. **Start violation detection:**
+   
+   Build the docker image using the Dockerfile in `violation_detection` and spin up an container on a x86_64 machine using the built image exposing `5000` to the host as the numberplate recognition API.
     ```bash
     cd ../violation_detection
-    docker compose up
+    uv run main.py
     ```
 
 5. **Refer to `docs/` for MQTT protocol details.**
