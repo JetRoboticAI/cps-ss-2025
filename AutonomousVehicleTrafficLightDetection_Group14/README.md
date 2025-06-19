@@ -7,7 +7,7 @@ This project is a Raspberry Pi–based autonomous vehicle system designed to det
 
 ## Key Features
 
-- Real-time detection of red, yellow, and green lights
+- Real-time detection of red and green lights
 - Vehicle automatically stops or moves based on detected light
 - Uses UART communication between Raspberry Pi and HuskyLens
 - Controlled via DC motors and motor driver module
