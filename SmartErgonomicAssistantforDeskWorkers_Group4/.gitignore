@@ -1,0 +1,45 @@
+# macOS system files
+.DS_Store
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Node.js dependencies (if any)
+node_modules/
+
+# Build and distribution folders
+dist/
+build/
+*.egg-info/
+
+# Environment variable files
+.env
+.env.*
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.bak

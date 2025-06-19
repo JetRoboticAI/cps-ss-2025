@@ -1,0 +1,4 @@
+RPi.GPIO
+gspread
+oauth2client
+lcd-drivers
