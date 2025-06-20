@@ -22,6 +22,7 @@ sudo apt install -y python3-pip python3-smbus python3-gpiozero i2c-tools
 ## Run Backend Server
 Use the following commands:
 ```
+cd backend
 pip install -r requirements.txt
 python app.py
 ```
