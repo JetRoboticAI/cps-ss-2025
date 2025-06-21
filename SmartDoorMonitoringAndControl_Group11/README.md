@@ -76,5 +76,3 @@ This project is a smart system that lets you **lock/unlock a door**, **close it 
 - Add battery backup in case power goes out  
 
 ---
-
-If you want help or more info, check out the PDFs in this project!
